@@ -1,0 +1,96 @@
+.editor-image-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.editor-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.editor-image {
+  max-width: 100%;
+  height: auto;
+  cursor: default;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+}
+
+.editor-image-wrapper:hover .editor-image-resizer {
+  opacity: 1;
+}
+
+.editor-image-caption-container {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.editor-image-caption {
+  font-size: 0.875rem;
+  color: #64748b;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Image selection styles */
+.editor-image-selected {
+  box-shadow: 0 0 0 2px #4f46e5;
+}
+
+/* Image resizing */
+.editor-image-resizer {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.editor-image-resizer-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #4f46e5;
+  border: 1px solid white;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.editor-image-resizer-corner-nw {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+
+.editor-image-resizer-corner-ne {
+  top: -5px;
+  right: -5px;
+  cursor: ne-resize;
+}
+
+.editor-image-resizer-corner-sw {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+
+.editor-image-resizer-corner-se {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}
+
+/* Placeholder image */
+.editor-image-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 4px;
+  color: #64748b;
+  font-size: 0.875rem;
+}

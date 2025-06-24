@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #6366f1;
+  --text-color: #1f2937;
+  --border-color: #e5e7eb;
+  --background-light: #f9fafb;
+  --background-dark: #f3f4f6;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.editor-container {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-light);
+}
+
+.editor-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.editor-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editor-wrapper {
+  min-height: 300px;
+}
+
+/* Lexical editor styles */
+.editor-input {
+  min-height: 300px;
+  resize: none;
+  font-size: 16px;
+  caret-color: rgb(5, 5, 5);
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.editor-placeholder {
+  color: #999;
+  overflow: hidden;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.editor-paragraph {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.editor-text-bold {
+  font-weight: bold;
+}
+
+.editor-text-italic {
+  font-style: italic;
+}
+
+.editor-text-underline {
+  text-decoration: underline;
+}
+
+.editor-text-strikethrough {
+  text-decoration: line-through;
+}
+
+.editor-text-underlineStrikethrough {
+  text-decoration: underline line-through;
+}
+
+.editor-text-code {
+  background-color: rgb(240, 242, 245);
+  padding: 1px 0.25rem;
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 94%;
+  border-radius: 0.25rem;
+}
+
+.editor-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.editor-code {
+  background-color: rgb(240, 242, 245);
+  font-family: Menlo, Consolas, Monaco, monospace;
+  display: block;
+  padding: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  font-size: 94%;
+  white-space: pre-wrap;
+}
+
+.editor-heading-h1 {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin: 1.5rem 0 1rem;
+}
+
+.editor-heading-h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 1.25rem 0 0.75rem;
+}
+
+.editor-heading-h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin: 1rem 0 0.5rem;
+}
+
+.editor-output {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.editor-output h2 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.25rem;
+}
+
+.state-output {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.state-output pre {
+  margin: 0;
+  padding: 1rem;
+  text-align: left;
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fafafa;
+  color: #333;
+  overflow-x: auto;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background-dark);
+  border-top: 1px solid var(--border-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .editor-input {
+    min-height: 200px;
+  }
+  
+  .state-output {
+    height: 200px;
+  }
+}
