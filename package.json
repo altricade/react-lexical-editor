@@ -36,7 +36,7 @@
     "rich-text",
     "wysiwyg"
   ],
-  "author": "Zaid Omar <zaid.ahmed.ahmed@gmail.com> (https://altricade.com)",
+  "author": "Zaid Omar <omar.m.zaid@hotmail.com> (https://altricade.com)",
   "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
