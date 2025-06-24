@@ -1,0 +1,11 @@
+{
+  "entryPoints": ["./src/index.ts"],
+  "out": "docs",
+  "name": "React Lexical Editor",
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "plugin": ["typedoc-plugin-markdown"],
+  "theme": "default",
+  "includeVersion": true,
+  "hideGenerator": true
+}

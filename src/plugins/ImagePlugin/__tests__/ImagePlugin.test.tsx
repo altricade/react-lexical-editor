@@ -11,16 +11,15 @@ import { ParagraphNode, TextNode } from 'lexical';
 // Test component that provides access to the editor instance
 const TestComponent = ({ onEditorReady }: { onEditorReady: (editor: any) => void }) => {
   const [editor] = useLexicalComposerContext();
-  
+
   useEffect(() => {
     onEditorReady(editor);
   }, [editor, onEditorReady]);
-  
+
   return null;
 };
 
 describe('ImagePlugin', () => {
-
   // Test helper to render the ImagePlugin within a LexicalComposer context
   const renderWithImagePlugin = (onEditorReady?: (editor: any) => void) => {
     return render(
@@ -31,7 +30,7 @@ describe('ImagePlugin', () => {
           theme: {
             paragraph: 'editor-paragraph',
           },
-          nodes: [ParagraphNode, TextNode, ImageNode]
+          nodes: [ParagraphNode, TextNode, ImageNode],
         }}
       >
         {onEditorReady && <TestComponent onEditorReady={onEditorReady} />}
@@ -49,14 +48,14 @@ describe('ImagePlugin', () => {
     renderWithImagePlugin();
     expect(screen.getByText('Enter some text...')).toBeInTheDocument();
   });
-  
+
   it('registers the INSERT_IMAGE_COMMAND with the editor', () => {
     let editorInstance: any;
-    
-    renderWithImagePlugin((editor) => {
+
+    renderWithImagePlugin(editor => {
       editorInstance = editor;
     });
-    
+
     // This is a minimal test to just ensure the plugin loads
     // A more comprehensive test would need to mock the editor dispatchCommand
     expect(editorInstance).toBeDefined();

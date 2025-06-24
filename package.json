@@ -27,6 +27,7 @@
     "lint": "eslint src/**/*.{ts,tsx}",
     "format": "prettier --write src/**/*.{ts,tsx}",
     "playground": "cd playground && npm run dev",
+    "docs": "typedoc",
     "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "keywords": [
@@ -63,6 +64,8 @@
     "prettier": "^3.6.0",
     "ts-jest": "^29.4.0",
     "tsup": "^8.5.0",
+    "typedoc": "^0.28.5",
+    "typedoc-plugin-markdown": "^4.7.0",
     "typescript": "^5.8.3"
   }
 }

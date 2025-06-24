@@ -1,3 +1,7 @@
+**React Lexical Editor v0.1.2**
+
+***
+
 # React Lexical Editor
 
 A rich text editor library for React built on top of [Lexical](https://lexical.dev/), Meta's extensible text editor framework.
@@ -191,21 +195,6 @@ const customTheme = {
 />
 ```
 
-## API Documentation
-
-Detailed API documentation is available in the [docs](./docs/) directory. The documentation is generated using TypeDoc and includes:
-
-- Complete interface definitions
-- Component props and methods
-- Plugin APIs
-- Exported variables and constants
-
-To generate the latest documentation:
-
-```bash
-npm run docs
-```
-
 ## Development
 
 ```bash
@@ -224,7 +213,7 @@ npm run build
 
 ## Contributing
 
-Contributions are welcome! Please check out our [contributing guidelines](./CONTRIBUTING.md).
+Contributions are welcome! Please check out our [contributing guidelines](_media/CONTRIBUTING.md).
 
 ## License
 
