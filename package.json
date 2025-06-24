@@ -1,6 +1,6 @@
 {
   "name": "react-lexical-editor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A rich text editor library for React using Lexical",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
