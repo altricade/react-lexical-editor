@@ -29,7 +29,7 @@ export interface LexicalEditorProps {
   /**
    * Editor theme class overrides
    */
-  theme?: Record<string, any>;
+  theme?: Record<string, string | number | boolean | null | undefined>;
 
   /**
    * Callback when editor content changes

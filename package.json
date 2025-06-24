@@ -1,6 +1,6 @@
 {
   "name": "react-lexical-editor",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A rich text editor library for React using Lexical",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -55,7 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^8.35.0",
     "@typescript-eslint/parser": "^8.35.0",
     "esbuild": "^0.25.5",
-    "eslint": "^9.29.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "jest": "^30.0.2",

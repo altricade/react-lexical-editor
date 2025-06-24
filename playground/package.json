@@ -14,7 +14,7 @@
     "react-dom": "^19.1.0",
     "lexical": "^0.13.1",
     "@lexical/react": "^0.13.1",
-    "react-lexical-editor": "file:.."
+    "react-lexical-editor": "^0.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
