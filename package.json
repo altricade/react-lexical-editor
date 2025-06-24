@@ -10,11 +10,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/react-lexical-editor.git"
+    "url": "git+https://github.com/altricade/react-lexical-editor.git"
   },
-  "homepage": "https://github.com/yourusername/react-lexical-editor#readme",
+  "homepage": "https://github.com/altricade/react-lexical-editor#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/react-lexical-editor/issues"
+    "url": "https://github.com/altricade/react-lexical-editor/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -36,11 +36,11 @@
     "rich-text",
     "wysiwyg"
   ],
-  "author": "Your Name <your.email@example.com> (https://yourwebsite.com)",
+  "author": "Zaid Omar <zaid.ahmed.ahmed@gmail.com> (https://altricade.com)",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "@lexical/react": "^0.32.1",
